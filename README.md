@@ -1,8 +1,40 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Pokemon Card Flip Effect
+Bu proje, React kullanarak oluşturulmuş bir Pokemon kartı flip efekti uygulamasıdır. Kullanıcı bir kartın üzerine geldiğinde, kart -5 derece ters döner ve şık bir geçiş efekti uygular.
 
-Currently, two official plugins are available:
+🚀 Özellikler
+Hover efekti: Kartın üzerine gelince -5 derece döner.
+Ön yüz: Pokemon'un adı, resmi, deneyim puanı, yetenekleri ve türleri.
+React bileşenleri: Kart yapısı tamamen yeniden kullanılabilir bileşenler halinde tasarlandı.
+Pokemonları Listelemek İçin PokeApi Adlı Api Sistemi Üzerinden Axios İle Bağlantı Sağlandı
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Proje Yapısı
+📁 pokemon-card-flip
+│── 📄 package.json 
+│── 📄 src/
+│   ├── 📄 App.js
+│   ├── 📄 components/
+│   │   ├── 📄 PokemonCard.js 
+│   │   ├── 📄 styles.css 
+│   └── 📄 assets/     
+└── 📄 public/
+    ├── 📄 index.html 
+    └── 📄 favicon.ico
+
+🔧 Kurulum
+Projeyi klonlayın:
+git clone https://github.com/kullanici-adi/pokemon-card-flip.git
+Bağımlılıkları yükleyin:
+npm install
+Projeyi başlatın:
+npm run dev
+Tarayıcıda açın:
+http://localhost:3000 adresine giderek projeyi görüntüleyebilirsiniz.
+
+🎨 Kullanılan Teknolojiler
+React.js → Bileşen tabanlı yapı için
+CSS → Flip efekti ve stil tasarımı için
+JavaScript (ES6+) → Etkileşimleri yönetmek için
+
+📜 Lisans
+Bu proje MIT Lisansı ile lisanslanmıştır. Serbestçe kullanabilir, değiştirebilir ve dağıtabilirsiniz. 🎴✨
