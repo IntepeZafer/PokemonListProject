@@ -27,7 +27,7 @@ function App() {
   } , []);
   return (
     <>
-    <div>
+    <div className='App'>
       {
         pokemon.map((pokemon , index) => {
           return <PokemonCard key={index} pokemon={pokemon} />
