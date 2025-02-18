@@ -11,6 +11,7 @@ const PokemonCard = ({pokemon}) => {
         <p>Weight : {pokemon.weight}</p>
         <p>Height : {pokemon.height}</p>
         <p>Types : {pokemon.types}</p>
+        <div className='back-image'></div>
     </div>
   )
 }
