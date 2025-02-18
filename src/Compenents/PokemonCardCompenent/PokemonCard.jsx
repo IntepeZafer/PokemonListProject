@@ -2,8 +2,21 @@ import ProperTypes from 'prop-types'
 
 const PokemonCard = ({pokemon}) => {
   return (
-    <div>
-        <h1>Pokemon Name : {pokemon.name}</h1>
+    <div className='pokemon-card'>
+        <div className='pokemon-card-item'>
+            <div>
+                <h1>Pokemon ID : <span>{pokemon.id}</span></h1>
+                <h1>Pokemon Name : <span>{pokemon.name}</span></h1>
+                <div className='pokemon-image-container'>
+                    <img className='pokemon-image' src={pokemon.image} alt={pokemon.name} />
+                </div>
+                <p>Exprience : {pokemon.experience}</p>
+                <p>Abilities : {pokemon.abilities}</p>
+                <p>Weight : {pokemon.weight}</p>
+                <p>Height : {pokemon.height}</p>
+                <p>Types : {pokemon.types}</p>
+            </div>
+        </div>
     </div>
   )
 }
@@ -13,13 +26,3 @@ PokemonCard.propTypes = {
 }
 
 export default PokemonCard
-
-
-{/* <p>Pokemon ID:{pokemon.id}</p>
-        <h1>Pokemon Name:{pokemon.name}</h1>
-        <img src={pokemon.image} alt={pokemon.name} />
-        <p>Exprience:{pokemon.exprience}</p>
-        <p>Abilities:{pokemon.abilities}</p>
-        <p>Width : {pokemon.width}</p>
-        <p>Height : {pokemon.heigth}</p>
-        <p>Types : {pokemon.types}</p> */}

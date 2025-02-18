@@ -19,7 +19,8 @@ const fetchPokemonDetails = (url) => {
         experience: response.data.base_experience, 
         weight: response.data.weight, 
         height: response.data.height, 
-        types: response.data.types.map(type => type.type.name)
+        types: response.data.types.map(type => type.type.name),
+        abilities: response.data.abilities.map(ability => ability.ability.name)
     }))
     .catch((error) => {
         console.error('Error fetching Pokémon details:', error);
