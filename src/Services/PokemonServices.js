@@ -12,7 +12,7 @@ const fetchPokemonList  = () => {
 
 const fetchPokemonDetails = (url) => {
     return axios.get(url)
-    .then(response => ({ // 'response' olarak düzeltildi
+    .then(response => ({ 
         id: response.data.id,
         name: response.data.name,
         image: response.data.sprites.front_default,
